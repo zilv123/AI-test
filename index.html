@@ -94,5 +94,109 @@
             </footer>
         </div>
     </div>
+    <script>
+// 音乐世界点击事件
+document.addEventListener('DOMContentLoaded', function() {
+    const musicCard = document.querySelector('.feature-card:first-child');
+    const personalCard = document.querySelector('.feature-card:last-child');
+    
+    // 音乐世界点击事件
+    musicCard.addEventListener('click', function() {
+        // 创建模态框显示视频
+        showVideoModal();
+    });
+    
+    // 个人动态点击事件
+    personalCard.addEventListener('click', function() {
+        showUpdateStatus();
+    });
+});
+
+// 显示视频模态框
+function showVideoModal() {
+    const modal = document.createElement('div');
+    modal.className = 'video-modal';
+    modal.innerHTML = `
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🎵 鸡你太美 - 经典原版</h3>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="video-container">
+                <iframe 
+                    src="https://player.bilibili.com/player.html?bvid=BV1J4411v7g6&page=1&autoplay=1" 
+                    scrolling="no" 
+                    border="0" 
+                    frameborder="no" 
+                    framespacing="0" 
+                    allowfullscreen="true">
+                </iframe>
+            </div>
+            <p class="video-desc">经典永流传，iKUN必看！🏀</p>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    
+    // 添加点击外部关闭功能
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+}
+
+// 显示更新状态
+function showUpdateStatus() {
+    const statusModal = document.createElement('div');
+    statusModal.className = 'status-modal';
+    statusModal.innerHTML = `
+        <div class="status-content">
+            <div class="status-header">
+                <h3>🌟 个人动态</h3>
+                <button class="close-btn" onclick="closeStatusModal()">&times;</button>
+            </div>
+            <div class="status-body">
+                <div class="loading-animation">
+                    <div class="loading-dot"></div>
+                    <div class="loading-dot"></div>
+                    <div class="loading-dot"></div>
+                </div>
+                <h4>持续更新中...</h4>
+                <p>🎤 正在准备新的音乐作品</p>
+                <p>🏀 篮球技能持续精进中</p>
+                <p>💃 舞蹈动作不断创新</p>
+                <p>📱 敬请关注最新动态！</p>
+                <div class="update-time">
+                    最后更新：${new Date().toLocaleString('zh-CN')}
+                </div>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(statusModal);
+    
+    // 添加点击外部关闭功能
+    statusModal.addEventListener('click', function(e) {
+        if (e.target === statusModal) {
+            closeStatusModal();
+        }
+    });
+}
+
+// 关闭视频模态框
+function closeModal() {
+    const modal = document.querySelector('.video-modal');
+    if (modal) {
+        modal.remove();
+    }
+}
+
+// 关闭状态模态框
+function closeStatusModal() {
+    const modal = document.querySelector('.status-modal');
+    if (modal) {
+        modal.remove();
+    }
+}
+</script>
 </body>
 </html>
