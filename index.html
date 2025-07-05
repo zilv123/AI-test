@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="蔡徐坤官方个人网站 - 音乐、篮球、舞蹈，iKUN的数字王国">
+    <meta name="keywords" content="蔡徐坤,鸡你太美,iKUN,音乐,篮球,舞蹈">
+    <meta name="author" content="蔡徐坤">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caixuji.edu.deal/">
+    <meta property="og:title" content="蔡徐坤的网站">
+    <meta property="og:description" content="欢迎来到鸡你太美官方认证的个人网站">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://caixuji.edu.deal/">
+    <meta property="twitter:title" content="蔡徐坤的网站">
+    <meta property="twitter:description" content="欢迎来到鸡你太美官方认证的个人网站">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#764ba2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="蔡徐坤">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//api.vvhan.com">
+    <link rel="dns-prefetch" href="//player.bilibili.com">
+
+    <title>蔡徐坤的网站 - iKUN的数字王国</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 梅花特效脚本 -->
+    <script src="https://api.vvhan.com/api/script/meihua"></script>
+    
+    <div class="container">
+        <div class="glass-card">
+            <!-- Header -->
+            <div class="header">
+                <h1 class="title">
+                    <span class="sparkle">✨</span>
+                    欢迎来到我的网站
+                    <span class="sparkle">✨</span>
+                </h1>
+
+                <!-- 实时时间和日期 -->
+                <div class="datetime-widget">
+                    <div class="current-time" id="currentTime">00:00:00</div>
+                    <div class="current-date" id="currentDate">2025年1月1日</div>
+                    <div class="greeting-text" id="greetingText">早上好，iKUN！</div>
+                </div>
+
+                <!-- 访问统计和在线状态 -->
+                <div class="site-status">
+                    <div class="status-item">
+                        <span class="status-dot online"></span>
+                        <span>网站运行中</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="visitor-count">👥 今日访问: <span id="visitorCount">1024</span></span>
+                    </div>
+                    <div class="status-item">
+                        <span class="weather-info" id="weatherInfo">🌤️ 天气不错</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="content">
+                <div class="intro-card">
+                    <p class="intro-text">
+                        这是 <span class="highlight-yellow">鸡你太美</span> 官方认证的个人网站 🏀
+                    </p>
+                    <p class="intro-text">
+                        网站已在 <span class="highlight-blue">Vercel</span> 平台成功起飞，就像我的 Rap 一样丝滑 🎤
+                    </p>
+                    <p class="intro-text">
+                        欢迎各位 <span class="highlight-purple">iKUN</span> 来到我的数字王国！
+                    </p>
+                </div>
+
+                <!-- Features Section -->
+                <div class="features-grid">
+                    <div class="feature-card music-card">
+                        <div class="feature-icon">🎵</div>
+                        <h3 class="feature-title music">音乐世界</h3>
+                        <p class="feature-desc">分享我的音乐作品和创作灵感</p>
+                        <div class="feature-stats">
+                            <span class="stat-item">🎤 原创歌曲</span>
+                            <span class="stat-item">🏆 热门单曲</span>
+                        </div>
+                    </div>
+                    <div class="feature-card personal-card">
+                        <div class="feature-icon">🌟</div>
+                        <h3 class="feature-title personal">个人动态</h3>
+                        <p class="feature-desc">记录生活点滴和成长历程</p>
+                        <div class="feature-stats">
+                            <span class="stat-item">📸 生活瞬间</span>
+                            <span class="stat-item">💭 心情感悟</span>
+                        </div>
+                    </div>
+                    <div class="feature-card basketball-card">
+                        <div class="feature-icon">🏀</div>
+                        <h3 class="feature-title basketball">篮球技巧</h3>
+                        <p class="feature-desc">展示篮球技能和训练日常</p>
+                        <div class="feature-stats">
+                            <span class="stat-item">⚡ 精彩集锦</span>
+                            <span class="stat-item">🎯 技巧教学</span>
+                        </div>
+                    </div>
+                    <div class="feature-card dance-card">
+                        <div class="feature-icon">💃</div>
+                        <h3 class="feature-title dance">舞蹈表演</h3>
+                        <p class="feature-desc">舞蹈作品和编舞创意分享</p>
+                        <div class="feature-stats">
+                            <span class="stat-item">🎭 舞蹈作品</span>
+                            <span class="stat-item">✨ 创意编舞</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 互动内容区域 -->
+                <div class="interactive-section">
+                    <!-- 摸鱼日历 -->
+                    <div class="moyu-card">
+                        <h3 class="moyu-title">
+                            📅 今日摸鱼日历
+                        </h3>
+                        <div class="moyu-image-container">
+                            <div class="image-wrapper">
+                                <img
+                                    src="https://api.vvhan.com/api/moyu"
+                                    alt="摸鱼日历 - 今日娱乐资讯"
+                                    class="moyu-image"
+                                    crossorigin="anonymous"
+                                />
+                                <div class="image-overlay"></div>
+                            </div>
+                        </div>
+                        <p class="moyu-desc">每日更新的娱乐资讯日历，让摸鱼更有仪式感 ✨</p>
+                    </div>
+
+                    <!-- 每日一言 -->
+                    <div class="quote-card">
+                        <h3 class="quote-title">💭 每日一言</h3>
+                        <div class="quote-content">
+                            <p class="quote-text" id="dailyQuote">加载中...</p>
+                            <p class="quote-author" id="quoteAuthor">— 加载中</p>
+                        </div>
+                        <button class="refresh-quote" onclick="websiteManager.refreshQuote()">🔄 换一句</button>
+                    </div>
+
+                    <!-- 音乐播放器 -->
+                    <div class="music-player-card">
+                        <h3 class="player-title">🎵 今日推荐</h3>
+                        <div class="music-info">
+                            <div class="song-cover">🎤</div>
+                            <div class="song-details">
+                                <div class="song-name">鸡你太美</div>
+                                <div class="artist-name">蔡徐坤</div>
+                            </div>
+                        </div>
+                        <div class="music-controls">
+                            <button class="control-btn" onclick="websiteManager.toggleMusic()">
+                                <span id="playIcon">▶️</span>
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress" id="musicProgress"></div>
+                            </div>
+                            <span class="time-display">2:33</span>
+                        </div>
+                    </div>
+
+                    <!-- 互动小游戏 -->
+                    <div class="game-card">
+                        <h3 class="game-title">🎮 点击挑战</h3>
+                        <div class="game-content">
+                            <div class="game-score">
+                                <span>得分: <span id="gameScore">0</span></span>
+                                <span>最高: <span id="highScore">0</span></span>
+                            </div>
+                            <div class="game-area" id="gameArea">
+                                <div class="game-target" id="gameTarget">🏀</div>
+                            </div>
+                            <button class="game-start" onclick="websiteManager.startGame()">开始游戏</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Stats -->
+                <div class="stats-container">
+                    <div class="stat-card interactive" data-stat="fans">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-number yellow" data-target="2025">0</div>
+                        <div class="stat-label">粉丝数量</div>
+                        <div class="stat-unit">万+</div>
+                    </div>
+                    <div class="stat-card interactive" data-stat="songs">
+                        <div class="stat-icon">🎵</div>
+                        <div class="stat-number blue" data-target="88">0</div>
+                        <div class="stat-label">原创歌曲</div>
+                        <div class="stat-unit">首</div>
+                    </div>
+                    <div class="stat-card interactive" data-stat="videos">
+                        <div class="stat-icon">📹</div>
+                        <div class="stat-number purple" data-target="156">0</div>
+                        <div class="stat-label">视频作品</div>
+                        <div class="stat-unit">个</div>
+                    </div>
+                    <div class="stat-card interactive" data-stat="awards">
+                        <div class="stat-icon">🏆</div>
+                        <div class="stat-number green" data-target="12">0</div>
+                        <div class="stat-label">获得奖项</div>
+                        <div class="stat-unit">项</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-section">
+                <h3 class="social-title">🌟 关注我的社交平台</h3>
+                <div class="social-links">
+                    <a href="https://weibo.com/u/5230466807" target="_blank" class="social-link weibo">
+                        <div class="social-icon">🎭</div>
+                        <span class="social-name">微博</span>
+                        <span class="social-desc">@蔡徐坤</span>
+                    </a>
+
+                    <a href="https://space.bilibili.com/397029987" target="_blank" class="social-link bilibili">
+                        <div class="social-icon">📺</div>
+                        <span class="social-name">哔哩哔哩</span>
+                        <span class="social-desc">视频作品</span>
+                    </a>
+
+                    <a href="https://www.douyin.com/user/MS4wLjABAAAA8Uy9j_6SeCx_5cWudnW6ZqLuQFUgMc8N8wLBHFBJTqM" target="_blank" class="social-link douyin">
+                        <div class="social-icon">🎵</div>
+                        <span class="social-name">抖音</span>
+                        <span class="social-desc">短视频</span>
+                    </a>
+
+                    <a href="https://instagram.com/caixukun1021" target="_blank" class="social-link instagram">
+                        <div class="social-icon">📸</div>
+                        <span class="social-name">Instagram</span>
+                        <span class="social-desc">生活分享</span>
+                    </a>
+
+                    <a href="https://music.163.com/artist?id=12138269" target="_blank" class="social-link netease">
+                        <div class="social-icon">🎶</div>
+                        <span class="social-name">网易云音乐</span>
+                        <span class="social-desc">音乐作品</span>
+                    </a>
+
+                    <a href="https://y.qq.com/n/ryqq/singer/003fA5G40k6hKc" target="_blank" class="social-link qq-music">
+                        <div class="social-icon">🎤</div>
+                        <span class="social-name">QQ音乐</span>
+                        <span class="social-desc">热门歌曲</span>
+                    </a>
+
+                    <a href="https://www.xiaohongshu.com/user/profile/5c8f8f8f0000000011035c8f" target="_blank" class="social-link xiaohongshu">
+                        <div class="social-icon">📝</div>
+                        <span class="social-name">小红书</span>
+                        <span class="social-desc">生活记录</span>
+                    </a>
+
+                    <a href="mailto:contact@caixuji.edu.deal" class="social-link email">
+                        <div class="social-icon">📧</div>
+                        <span class="social-name">邮箱联系</span>
+                        <span class="social-desc">商务合作</span>
+                    </a>
+                </div>
+
+                <!-- 粉丝互动区 -->
+                <div class="fan-interaction">
+                    <p class="fan-message">💝 感谢每一位iKUN的支持与陪伴！</p>
+                    <div class="fan-stats">
+                        <div class="fan-stat">
+                            <span class="fan-number" data-target="2025">0</span>
+                            <span class="fan-label">万粉丝</span>
+                        </div>
+                        <div class="fan-stat">
+                            <span class="fan-number" data-target="365">0</span>
+                            <span class="fan-label">天陪伴</span>
+                        </div>
+                        <div class="fan-stat">
+                            <span class="fan-number" data-target="100">0</span>
+                            <span class="fan-label">%真心</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p class="footer-text">
+                    © 2025 <span class="footer-brand">caixuji.edu.deal</span>
+                </p>
+                <p class="footer-powered">Made with ❤️ for all iKUNs</p>
+                <p class="footer-motto">只因你太美 🏀</p>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
